@@ -1,13 +1,7 @@
-﻿int namber = new Random().Next(10,1000);
-Console.WriteLine($"Рандомное число: {namber}");
-int Digit = namber / 100;
-int thirdDigit;
-if (Digit == 0)
+﻿Console.Write("Введите число: ");
+string number = Console.ReadLine();
+if(number > 2)
 {
-    Console.WriteLine("Третьего числа нет!!!");
+    Console.Write($"Третья цифра: {number[2]}");
 }
-else
-{
-    thirdDigit = namber % 10;
-    Console.WriteLine($"Третья цыфра рандомного числа: {thirdDigit}");
-}
+else Console.WriteLine("Третьей цифры нет");
